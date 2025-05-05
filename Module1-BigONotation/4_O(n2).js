@@ -23,24 +23,19 @@ function hasPairWithSum(arr, target) {
 }
 
 // Example 3
-// Outer loop: (n-1)
-// Inner loop: (n-i-1)
-function bubbleSort(arr) {
-  const n = arr.length;
-  for (let i = 0; i < n - 1; i++) {
-      for (let j = 0; j < n - i - 1; j++) {
-          if (arr[j] > arr[j + 1]) {
-              // Swap arr[j] and arr[j + 1]
-              const temp = arr[j];
-              arr[j] = arr[j + 1];
-              arr[j + 1] = temp;
-          }
+function compareAllPairs(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        console.log(`Comparing ${arr[i]} and ${arr[j]}`);
       }
+    }
   }
-  return arr;
-}
+  
+
+  
 
 const numbers = [64, 34, 25, 12, 22, 11, 90];
 console.log(bubbleSort(numbers)); // O(n²), as it uses nested loops to sort the array
 printPairs(numbers); // O(n²), because we have two nested loops
 console.log(hasPairWithSum(numbers, 10)); // O(n²), as we check each pair of elements
+compareAllPairs([1, 2, 3]);
