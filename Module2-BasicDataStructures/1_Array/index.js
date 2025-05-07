@@ -1,39 +1,52 @@
-let className = ["Aidan", "Carolin", "Catalina", "Cidney", "James"]
+let studentsList = ["Roberto", "Bryan", "John", "Chase", "Kameron"]
 
 // Add Elements at the end
-// Adds the New Element and update the length
-console.log(className); 
-console.log("Result After Push"); 
-className.push ("Martin")
-console.log(className); 
+// BigO: O(1)
+console.log("Class List"); 
+console.log(studentsList); 
+console.log("Adding element to the end of array O(1):"); 
+studentsList.push ("Erica")
+console.log(studentsList); 
 
 // Add Element to the beginig
+// BigO: O(n)
 // Creates Space at the Start, Inserts New Element at the Beginning, Updates the Array Length
-// console.log(className); 
-// console.log("Result After unshift"); 
-// className.unshift("Mytisha")
-// console.log(className); 
+console.log("Adding element to the beginning of array O(n):"); 
+studentsList.unshift("Allie")
+console.log(studentsList); 
 
 // Delete Element from end
+// BigO: O(1)
 // Identifies the Last Element, Removes the Last Element
 // Modifies the Original Array, Decreases Array Length
-// console.log(className); 
-// console.log("Result After pop"); 
-// className.pop()
-// console.log(className); 
+console.log("Deleting element form end of array o(1):"); 
+studentsList.pop()
+console.log(studentsList); 
 
 // Delete Element from begining
+// BigO: O(n)
 // Identifies the First Element and Removes the First Element
 // Shifts Remaining Elements, Updates the Array Length
 // Modifies the Original Array, Decreases Array Length
-// console.log(className); 
-// console.log("Result After Shift"); 
-// className.shift()
-// console.log(className); 
+console.log("Deleting element from beginning of array O(n):"); 
+studentsList.shift()
+console.log(studentsList); 
 
-// Update Elements
-// Iterates over the Array
-// Applies the Callback Function, Creates a New Array
-// className[0] = "Kyra"
-// className = className.map ((item) => item+" Hi")
-// console.log(className); 
+
+// Update elements
+// Directly update one element (O(1))
+console.log("Updatting one element of an array O(1):");
+studentsList[0] = "Sebastian";
+console.log(studentsList);
+
+// The map() method creates a new array by applying a function to each element of an existing array.
+// It does not change the original array (it's non-destructive), and it returns a new array of the same length.
+studentsList = studentsList.map(item => item + " Hi");
+console.log("Updatting all elements of array o(n):");
+console.log(studentsList);
+
+
+// Search Element
+console.log("Searching for an element of an array O(n):");
+console.log(studentsList.includes("John")); // true
+console.log(studentsList.indexOf("Bryan")); // 1

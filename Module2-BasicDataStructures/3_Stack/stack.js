@@ -1,11 +1,8 @@
 // Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, 
-// Example: Undo Functionality in Text Editors
-
-// The Stack Big O Time Complexities
-//     Push (Insertion): O(1)
-//     Pop (Removal): O(1)
+//     Push (Insert): O(1)
+//     Pop (Remove): O(1)
 //     Peek Returns the top element without removing it.
-//     Searching: o(n)
+//     Search: o(n)
 
 let stackNumbers = [10, 9]
 

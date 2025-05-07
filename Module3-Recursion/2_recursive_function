@@ -1,9 +1,10 @@
-function countDown(n) {
-  console.log (`${n}`)
-  debugger;
-  // Base condition
-  if (n==0) return;
-  countDown(n-1)
+function countdown(n) {
+  if (n === 0) {
+    console.log("Done!");
+    return;
+  }
+  console.log(n);
+  countdown(n - 1); // recursive call
 }
 
-countDown (5)
+countdown(3);
