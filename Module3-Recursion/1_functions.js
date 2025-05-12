@@ -1,5 +1,5 @@
 function functionA (myNumber) {
-  debugger
+  debugger;
   console.log (`This is function A ${myNumber}`)
   functionB (myNumber)
 }
@@ -18,4 +18,4 @@ function functionD (myNumber) {
   console.log (`This is function D ${myNumber}`)
 }
 
-functionA(1)
+functionA (12)
