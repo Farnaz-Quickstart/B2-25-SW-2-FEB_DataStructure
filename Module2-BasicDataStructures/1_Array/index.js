@@ -1,4 +1,6 @@
 let studentsList = ["Roberto", "Bryan", "John", "Chase", "Kameron"]
+let tasks = ["Buy groceries", "Finish homework", "Clean room"];
+let playlist = ["Song A", "Song B", "Song C"];
 
 // Add Elements at the end
 // BigO: O(1)

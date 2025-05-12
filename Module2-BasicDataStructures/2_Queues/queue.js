@@ -27,3 +27,5 @@ console.log(queue);
 // You must traverse the queue from front to end
 console.log(queue.includes("Student C")); // true
 
+
+
